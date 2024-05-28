@@ -1,0 +1,15 @@
+{
+  "name": "badusb_server",
+  "version": "1.0.0",
+  "description": "Rafal must die",
+  "main": "index.js",
+  "scripts": {
+    
+    "start": "mkdir data && node index.js"
+  },
+  "author": "Damian Stochla",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
