@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Sevillana&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Sevillana" ,sans-serif;;
+}
+
+html{
+    height: -webkit-fill-available;
+}
+
+body{
+    height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #441919;
+    height: -webkit-fill-available;
+}
+
+.main{
+    position: relative;
+}
+
+.content{
+    background: #c94a4a;
+    color: #ececec;
+    height: 40dvh;
+    width: 50dvw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 100px;
+    border-radius: 100px;
+}
+
+.title{
+    font-size: 5dvi;
+    color: #000000;
+
+}
+
+.bnt-group{
+    display: flex;
+    font-size: 2dvi;
+
+    gap: 10px;
+    width: 100%;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+.bnt-group a{
+    text-decoration: none;
+    color: #ffffff;
+    background: #441919;
+    height: 6vh;
+    padding: 15px 15px ;
+    border: #e45252 2px solid;
+    border-radius: 10px;
+    position: absolute;
+}
+
+.bnt-group a:nth-child(1){
+    margin-left: 150px;
+}
+
+.bnt-group a:nth-child(2){
+    margin-right: 150px;
+}
+
+.bnt-group a:hover{
+    background: #d32727;
+    color: #ffffff;
+}   
+
+.bnt-group a:nth-child(1):hover{
+    opacity: 0;
+}
