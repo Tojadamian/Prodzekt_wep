@@ -2,6 +2,7 @@ const express = require("express");
 const app = express();
 const port = 3000;
 const { appendFile } = require("fs/promises");
+const path = require("path");
 
 
 
@@ -18,10 +19,15 @@ function NameData() {
   return "data/" + newPaddedDate + ".txt";
 }
 
+
+
 app.use(express.raw({ type:"*/*" }));
+let publicPath = path.join(__dirname)
+console.log(publicPath)
+app.use(express.static(publicPath));
 
 app.get("/", (req, res) => {
-  res.send("Hello World!");
+  res.sendFile(path.join(publicPath, "index.html"));
 });
 
 app.post("/", async (req, res) => {
